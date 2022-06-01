@@ -1,0 +1,595 @@
+:root {
+    --blue: #597DD5;
+    --yellow: #e8e81a;
+    --white: #ffffff;
+    --lightblue: #52ccd3;
+    --red: #C52121;
+    --grey: #DBDCED;
+    --black: #000;
+    --title: 4.8rem;
+    --text: 1.3rem;
+    --title_2: 3.188rem;
+    --text_2: 1.6rem;
+    --parrafos: 1.432rem;
+}
+
+/* Estilos Generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--white);
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+/* Logo */
+
+img {
+    width: 100px;
+}
+
+.logo {
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+/* Nav Bar */
+
+header .navBar {
+    text-align: right;
+    font-size: var(--text);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+}
+
+header .navBar ul {
+    list-style: none;
+}
+
+header .navBar ul li {
+    display: inline-block;
+}
+
+header .navBar ul li a {
+    text-decoration: none;
+    text-align: justify;
+    display: block;
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+header .navBar ul li a:hover {
+    background-color: var(--lightblue);
+    transition: 0.5s;
+    border-radius: 50px 50px;
+}
+
+.navBar ul li a.active {
+    background-color: var(--lightblue);
+    border-radius: 50px 50px;
+}
+
+
+/*  TOGGLE  */
+
+.nav-toggle {
+    color: var(--black);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Header */
+
+.contactHour {
+    background-color: var(--grey);
+
+}
+
+.contactHour h1 {
+    text-align: center;
+    font-size: var(--title_2);
+    padding: 40px;
+}
+
+.contactHour p {
+    text-align: center;
+    font-size: var(--text);
+    font-weight: bold;
+
+}
+
+.welcome {
+    position: relative;
+    background: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.welcome h1 {
+    color: var(--black);
+    font-size: var(--title);
+    text-align: center;
+    padding: auto;
+    font-weight: bold;
+}
+
+.welcome hr {
+    width: 41%;
+    height: 2px;
+    background: var(--black);
+    border: 5px;
+    margin-left: 400px;
+}
+
+.welcome p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: var(--text_2);
+    margin-top: 10px;
+    font-weight: 530;
+}
+
+.socialMedias {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.socialMedias a {
+    color: var(--black);
+    padding: 10px 40px;
+    font-size: var(--text_2);
+    height: 0%;
+}
+
+.socialMedias a:hover {
+    color: var(--lightblue);
+}
+
+/* Sobre nosotros */
+
+main .aboutUs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--grey);
+}
+
+main .aboutUs h1 {
+    font-size: var(--title_2);
+    color: var(--black);
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+main .aboutUs h3 {
+    text-align: center;
+    color: var(--black);
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+main .aboutUs p {
+    font-size: 20px;
+    color: var(--black);
+    text-align: center;
+
+}
+
+
+.teamCards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.teamCard {
+    width: 50%;
+    height: 50%;
+    margin-top: 40px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 20px 20px 25px 25px;
+}
+
+.teamCard>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hoverText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: var(--lightblue);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hoverText p {
+    color: var(--black);
+    text-align: center;
+    font-weight: lighter;
+}
+
+.teamCard:hover .hoverText {
+    transform: scale(1);
+    opacity: 0.9;
+    filter: alpha(opacity=100);
+    zoom: 1;
+}
+
+.socialMediasContactArq {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.linkedin a {
+    color: var(--lightblue);
+    font-size: 30px;
+    text-align: center;
+    margin-left: 170px;
+    margin-right: 170px;
+
+}
+
+.parrafoLine {
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Projects */
+
+.works {
+    background-color: var(--grey);
+}
+
+.works h1 {
+    text-align: center;
+    font-size: var(--title_2);
+    color: var(--black);
+    margin-bottom: 35px;
+    padding: 20px 20px;
+}
+
+.works p {
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+}
+
+.workInd {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.workCard {
+    width: 27%;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.workCard>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hoverWork {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hoverWork p {
+    color: var(--black);
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.workCard:hover .hoverWork {
+    transform: scale(1);
+}
+
+.workTeamFacebook {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 50px;
+}
+
+.workTeamFacebook h2 {
+    color: var(--black);
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer*/
+
+footer {
+    margin-top: 50px;
+    background: linear-gradient(to bottom, #0f0f10, 60%, #000000);
+    padding: 20px 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Formulario */
+
+.footerContact {
+    color: var(--white);
+    margin-top: 30px;
+}
+
+.footerContact h3 {
+    font-size: var(--text_2);
+}
+
+.footerContact p {
+    font-size: var(--text);
+    margin-bottom: 20px;
+}
+
+.formContact {
+    width: 60%;
+}
+
+.formInput {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.formInput>label>input,
+.textArea>textArea {
+    border-radius: 34px 1px;
+    border: none;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+.formInput>label {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.formuInput>label:last-child {
+    margin-right: 0;
+}
+
+textArea {
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+input,
+.submit,
+textArea:focus {
+    outline: none;
+}
+
+.submit {
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+/* final */
+
+.final {
+    color: var(--white);
+    font-size: var(--text);
+    text-align: center;
+    margin-top: 16px;
+}
+
+.socialmedia_footer {
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.socialmedia_footer a {
+    font-size: 40px;
+    color: var(--lightblue);
+    padding: 60px;
+}
+
+.socialmedia_footer a:hover {
+    color: var(--white);
+    font-size: 50px;
+}
+
+/* Sobre nosotros */
+
+.about_us {
+    color: var(--black);
+    font-size: var(--title);
+    text-align: center;
+    padding: auto;
+    font-weight: bold;
+    margin-top: 60px;
+
+}
+
+.about_us p {
+    font-size: var(--text);
+    font-weight: 200;
+}
+
+/* Boton */
+.btnSend {
+    height: 42px;
+    background-color: var(--white);
+    border: none;
+    border-radius: 21px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.btnSend p {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.btnSend:hover {
+    background-color: var(--lightblue);
+}
+
+/* Comunidad */
+
+.community {
+    text-align: center;
+    background-color: var(--grey);
+}
+
+.articleOne {
+    text-align: left;
+    padding: 20px;
+}
+
+.articleOne h1 {
+    font-size: var(--title_2);
+    text-align: center;
+}
+
+.articleOne p {
+    font-size: var(--text);
+    text-align: center;
+}
+
+.articleOne a {
+    color: var(--blue);
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.articleTwo {
+    text-align: left;
+    padding: 20px;
+}
+
+.articleTwo h2 {
+    font-size: var(--text_2);
+}
+
+.communityCard {
+    width: 50%;
+    margin-left: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.communityCard>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.facebookBrand {
+    text-align: center;
+}
+
+.facebookBrand h3 {
+    font-size: var(--title_2);
+    text-decoration: underline;
+}
+
+.facebookBrand p {
+    text-align: center;
+    font-size: var(--text);
+}
+
+.btnSendFacebook {
+    height: 42px;
+    background-color: var(--white);
+    border: none;
+    border-radius: 21px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.btnSendFacebook .none {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.btnSendFacebook .none:hover {
+    background-color: var(--lightblue);
+}
+
+/* Proyectos Pages */
+
+.moreProjects{
+    text-align: center;
+}
+
+.moreProjects h1{
+    font-size: var(--title_2);
+}
+
+.moreProjects p{
+    font-size: var(--parrafos);
+}
